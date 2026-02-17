@@ -5,12 +5,14 @@
 
 body {
     overflow-x: hidden;
+    scrollbar-width: thin;
 }
 
 nav {
     position: sticky;
     background-color: purple;
     top: 0;
+    z-index: 2;
 }
 
 section {
@@ -20,11 +22,35 @@ section {
 #hero {
     height: 100vh;
     background-color: red;
+
 }
 
-#introduction {
-    height: 200vh;
-    background-color: gray;
+#HeroText {
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    transform: translateY(-50%);
+
+    width: 40%;
+
+    font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
+}
+
+#HeroText h1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#HeroText h2 {
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+
+#HeroText h3 {
+    font-size: 1.4rem;
+    margin-top: -0.2rem;
+    font-weight: 500;
 }
 
 #EdgarPortrait {
@@ -32,4 +58,45 @@ section {
     position: absolute;
     right: 0px;
     bottom: 0px;
+}
+
+#HeroText p {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+#HeroText hr {
+    border: 1px solid black;
+}
+
+#HeroText h4 {
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    font-weight: 400;
+}
+
+
+
+
+#introduction {
+    height: auto;
+    background-color: gray;
+}
+
+#TheRavenPoem {
+    outline: 5px solid red;
+    width: 40%;
+    margin: 1rem;
+
+    right: 2%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#TheRavenPoem h1 {
+    margin-bottom: 1.4rem;
+    margin-top: 1rem;
 }
