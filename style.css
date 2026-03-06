@@ -1,10 +1,53 @@
-section {
-    width: 100vw;
-    height: 100vh;
+* {
+    outline: 2px solid red;
 }
 
 html {
     overflow-x: hidden;
+}
+
+img {
+    max-width: 70%; 
+    margin: 2%;
+    height: auto; 
+    display: block; 
+}
+
+section .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    "title images"
+    "text images";
+}
+
+section .title {
+    grid-area: title;
+}
+
+section .text {
+    grid-area: text;
+}
+
+section .images {
+    grid-area: images;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+section {
+    width: 100vw;
+    height: fit-content;
+    padding-bottom: 10vh;
+    padding-top: 5vh;
+}
+
+hr {
+    border: 2px solid black;
 }
 
 #hero {
@@ -18,24 +61,12 @@ html {
     justify-content: center;
     align-content: center;
     text-align: center;
-    outline: 2px solid red;
 }
 
 #introduction {
     background-color: rgb(20,0,80);
 
 }
-
-#webInformation {
-    background-color: rgb(80,40,30);
-
-}
-
-#infoIntroduction {
-    background-color: rgb(20,80,80);
-
-}
-
 
 #influenceViews {
     background-color: rgb(10,70,80);
