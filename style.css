@@ -1,102 +1,59 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    overflow-x: hidden;
-    scrollbar-width: thin;
-}
-
-nav {
-    position: sticky;
-    background-color: purple;
-    top: 0;
-    z-index: 2;
-}
-
 section {
     width: 100vw;
+    height: 100vh;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 #hero {
-    height: 100vh;
-    background-color: red;
-
-}
-
-#heroText {
-    position: absolute;
-    top: 50%;
-    left: 4%;
-    transform: translateY(-50%);
-
-    width: 40%;
-
-    font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
-}
-
-#heroText h1 {
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-#heroText h2 {
-    font-size: 3rem;
-    font-weight: 700;
-
-}
-
-#heroText h3 {
-    font-size: 1.4rem;
-    margin-top: -0.2rem;
-    font-weight: 500;
-}
-
-#edgarPortrait {
-    height: 500px;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-}
-
-#heroText p {
-    font-size: 1rem;
-    margin-top: 1rem;
-}
-
-#heroText hr {
-    border: 1px solid black;
-}
-
-#heroText h4 {
-    font-size: 0.8rem;
-    margin-top: 0.2rem;
-    font-weight: 400;
-}
-
-
-
-
-#introduction {
-    height: auto;
-    background-color: gray;
-}
-
-#ravenPoem {
-    outline: 5px solid red;
-    width: 40%;
-    margin: 1rem;
-
-    right: 2%;
-
+    background-color: rgb(100,40,80);
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    align-content: center;
 }
 
-#ravenPoem h1 {
-    margin-bottom: 1.4rem;
-    margin-top: 1rem;
+#hero #heroContainer {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    outline: 2px solid red;
+}
+
+#introduction {
+    background-color: rgb(20,0,80);
+
+}
+
+#webInformation {
+    background-color: rgb(80,40,30);
+
+}
+
+#infoIntroduction {
+    background-color: rgb(20,80,80);
+
+}
+
+
+#influenceViews {
+    background-color: rgb(10,70,80);
+
+}
+
+#Analysis {
+    background-color: rgb(100,40,80);
+
+
+}
+
+#modernDay {
+    background-color: rgb(10,140,20);
+
+
+}
+
+#conclusion {
+    background-color: rgb(200,10,180);
 }

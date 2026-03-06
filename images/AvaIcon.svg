@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com">
+  <text style="fill: rgb(1, 0, 132); font-family: Acme; font-size: 595.4px; white-space: pre; transform-origin: -120.004px -240.006px;" transform="matrix(0.945519, 0.325568, -0.325568, 0.945519, 46.054383, -215.863049)" x="200.006" y="618.688">Å</text>
+  <defs>
+    <style bx:fonts="Acme">@import url(https://fonts.googleapis.com/css2?family=Acme%3Aital%2Cwght%400%2C400&amp;display=swap);</style>
+  </defs>
+</svg>
