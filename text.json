@@ -1,5 +1,7 @@
 {
     "english": {
+        "heroSubtitle": "<p></p>",
+        "heroDescription": "<p>Edgar Allan Poe was a 19th-century writer known for dark, emotional literature. The Raven reflects this through its somber mood and focus on loss, creating atmosphere through rhythm and repetition.</p>",
         "ravenPoem":   [
             "<h1>The Raven</h1>",
             "<h2>by Edgar Allan Poe</h2>",

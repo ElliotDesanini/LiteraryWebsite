@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <rect x="100" y="100" width="300" height="300" style="stroke: rgb(0, 0, 0); fill: rgb(0, 82, 147); stroke-width: 0px;" rx="40" ry="40"/>
+  <rect x="100" y="225" width="300" height="52.895" style="stroke: rgb(0, 0, 0); fill: rgb(254, 204, 2); stroke-width: 0px;"/>
+  <rect x="459.006" y="216.047" width="300" height="52.895" style="stroke: rgb(0, 0, 0); fill: rgb(254, 204, 2); transform-box: fill-box; transform-origin: 50% 50%; stroke-width: 0px;" transform="matrix(0, 1, -1, 0, -407.55851, 7.505498)"/>
+</svg>
