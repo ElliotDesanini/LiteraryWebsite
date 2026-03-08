@@ -193,6 +193,14 @@ section .images {
     padding-right: 25%;
 }
 
+.poemContainerSv #englishRaven p {
+    margin-bottom: 2.2rem;
+}
+
+.poemContainerSv #swedishRaven p {
+    margin-bottom: -0.2rem;
+}
+
 #ravenTitle {
     grid-area: ravenTitle;
     text-align: center;

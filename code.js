@@ -51,10 +51,6 @@ function setElementContentOrAttributes(el, value) {
  */
 function applyTranslations(lang) {
   const languagePack = translations[lang];
-  if (!languagePack) {
-    console.warn('No translations available for', lang);
-    return;
-  }
 
   Object.keys(languagePack).forEach(key => {
     const el = document.getElementById(key);
