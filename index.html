@@ -4,17 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Literary Website</title>
+  <title id="siteTitle">Literary Website</title>
 </head>
 <body>
   <header>
     <div class="container">
       <div class="actions">
-        <img src="images/engflagicon.svg" alt="the english flag">
+        <button id="langSwitcher">
+          <img src="images\engflagicon.svg" alt="language switch (current: eng)" id="langFlag">
+        </button>
       </div>
       <div class="links">
-        <a href="#introduction">intro</a>
-        <a href="#influenceViews">info</a>
+        <a href="#introduction" id="introLink">introduction</a>
+        <a href="#information" id="infoLink">information</a>
+        <a href="#theRaven" id="ravenLink">The Raven (poem)</a>
+        <a href="#influenceViews" id="viewLink">influences & views</a>
+        <a href="#Analysis" id="analyLink">analysis</a>
+        <a href="#modernDay" id="modernLink">modern day</a>
+        <a href="#conclusion" id="concLink">conclusion</a>
       </div>
       <div class="logo">
         <img src="images/AvaIcon.svg" alt="">
@@ -24,9 +31,9 @@
 
   <section id="hero">
     <div id="heroContainer">
-      <h1>Edgar Allan Poe</h1>
-      <h2>The gothic author Edgar Allan Poe and mondern day mental health</h2>
-      <p>bla bla bla</p>
+      <h1 id="heroTitle">Edgar Allan Poe</h1>
+      <h2 id="subheading">What Edgar Allan Poe's writings tells us about his mental health and how it relates to modern day.</h2>
+      <p id="heroDescription">bla bla bla</p>
       <hr>
       <p>Elliot D., Hector A., Ella F., Algot H.</p>
     </div>
@@ -35,9 +42,9 @@
   <section id="introduction">
     <div class="container">
       <div class="title">
-        <h1>this is title</h1>
+        <h1 id="introTitle">this is title</h1>
       </div>
-      <div class="text">
+      <div class="text" id="introText">
         <p>this is text</p>
       </div>
       <div class="images">
@@ -50,10 +57,10 @@
     <section id="information">
     <div class="container">
       <div class="title">
-        <h1>this is title</h1>
+        <h1 id="infoTitle">this is title</h1>
       </div>
-      <div class="text">
-        <p>this is text</p>
+      <div class="text" id="infoText">
+        <p >this is text</p>
       </div>
       <div class="images">
         <img src="images/EdgarPortrait.png" alt="picture of Edgar Allan Poe">
@@ -62,20 +69,15 @@
   </section>
 
   <section id="theRaven">
-    <div class="poemContainer">
+    <div class="poemContainer" id="ravenPoemContainer">
       <h1 id="ravenTitle">The Raven</h1>
       <div id="englishRaven">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reprehenderit ducimus veritatis corrupti sequi, at consequuntur vero aut, ratione delectus atque voluptate excepturi rem sunt nemo beatae soluta dolorum dolor? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid accusantium repudiandae ad dolore similique inventore excepturi dicta officia. Nulla repellat dignissimos saepe nostrum, impedit doloribus perspiciatis iusto molestiae quisquam ipsum!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reprehenderit ducimus veritatis corrupti sequi, at consequuntur vero aut, ratione delectus atque voluptate excepturi rem sunt nemo beatae soluta dolorum dolor? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid accusantium repudiandae ad dolore similique inventore excepturi dicta officia. Nulla repellat dignissimos saepe nostrum, impedit doloribus perspiciatis iusto molestiae quisquam ipsum!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reprehenderit ducimus veritatis corrupti sequi, at consequuntur vero aut, ratione delectus atque voluptate excepturi rem sunt nemo beatae soluta dolorum dolor? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid accusantium repudiandae ad dolore similique inventore excepturi dicta officia. Nulla repellat dignissimos saepe nostrum, impedit doloribus perspiciatis iusto molestiae quisquam ipsum!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reprehenderit ducimus veritatis corrupti sequi, at consequuntur vero aut, ratione delectus atque voluptate excepturi rem sunt nemo beatae soluta dolorum dolor? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid accusantium repudiandae ad dolore similique inventore excepturi dicta officia. Nulla repellat dignissimos saepe nostrum, impedit doloribus perspiciatis iusto molestiae quisquam ipsum!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reprehenderit ducimus veritatis corrupti sequi, at consequuntur vero aut, ratione delectus atque voluptate excepturi rem sunt nemo beatae soluta dolorum dolor? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid accusantium repudiandae ad dolore similique inventore excepturi dicta officia. Nulla repellat dignissimos saepe nostrum, impedit doloribus perspiciatis iusto molestiae quisquam ipsum!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reprehenderit ducimus veritatis corrupti sequi, at consequuntur vero aut, ratione delectus atque voluptate excepturi rem sunt nemo beatae soluta dolorum dolor? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid accusantium repudiandae ad dolore similique inventore excepturi dicta officia. Nulla repellat dignissimos saepe nostrum, impedit doloribus perspiciatis iusto molestiae quisquam ipsum!</p>
       </div>
       <div id="swedishRaven">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reprehenderit ducimus veritatis corrupti sequi, at consequuntur vero aut, ratione delectus atque voluptate excepturi rem sunt nemo beatae soluta dolorum dolor? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid accusantium repudiandae ad dolore similique inventore excepturi dicta officia. Nulla repellat dignissimos saepe nostrum, impedit doloribus perspiciatis iusto molestiae quisquam ipsum!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reprehenderit ducimus veritatis corrupti sequi, at consequuntur vero aut, ratione delectus atque voluptate excepturi rem sunt nemo beatae soluta dolorum dolor? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid accusantium repudiandae ad dolore similique inventore excepturi dicta officia. Nulla repellat dignissimos saepe nostrum, impedit doloribus perspiciatis iusto molestiae quisquam ipsum!</p>
-        
       </div>
     </div>
   </section>
@@ -83,9 +85,9 @@
   <section id="influenceViews">
     <div class="container">
       <div class="title">
-        <h1>this is title</h1>
+        <h1 id="viewTitle">this is title</h1>
       </div>
-      <div class="text">
+      <div class="text" id="viewText">
         <p>this is text</p>
       </div>
       <div class="images">
@@ -97,9 +99,9 @@
   <section id="Analysis">
     <div class="container">
       <div class="title">
-        <h1>this is title</h1>
+        <h1 id="analyTitle">this is title</h1>
       </div>
-      <div class="text">
+      <div class="text" id="analyText">
         <p>this is text</p>
       </div>
       <div class="images">
@@ -111,9 +113,9 @@
   <section id="modernDay">
     <div class="container">
       <div class="title">
-        <h1>this is title</h1>
+        <h1 id="modernTitle">this is title</h1>
       </div>
-      <div class="text">
+      <div class="text" id="modernText">
         <p>this is text</p>
       </div>
       <div class="images">
@@ -125,9 +127,9 @@
   <section id="conclusion">
     <div class="container">
       <div class="title">
-        <h1>this is title</h1>
+        <h1 id="concTitle">this is title</h1>
       </div>
-      <div class="text">
+      <div class="text" id="concText">
         <p>this is text</p>
       </div>
       <div class="images">
@@ -169,5 +171,6 @@
     </div>
   </footer>
 
+  <script src="code.js"></script>
 </body>
 </html>
