@@ -1,13 +1,46 @@
 const CONTENT_URL = 'content.json';
 const DEFAULT_LANG = 'en';
 
-let translations = {}; // will hold the parsed JSON translations
+const DEFAULT_LIGHTMODE = 'light';
+const LIGHTMODE_CONTENT = {
+  "light": {
+    "css": {
+      "--bg-color": "rgb(242, 242, 242)",
+      "--secondary-bg-color": "rgb(230, 230, 230)",
+      "--taskbar-bg-color": "rgb(101, 101, 111)",
+      "--hero-bg-color": "rgb(250, 250, 250)",
+      
+      "--primary-text-color": "rgb(0, 0, 0)",
+      "--secondary-text-color": "rgb(60, 60, 60)"
+    },
+    "buttonIcon": "images\\sunicon.svg",
+    "buttonalt": "light mode switch (a sun)"
+  },
+
+  "dark": {
+    "css": {
+      "--bg-color": "rgb(38, 38, 38)",
+      "--secondary-bg-color": "rgb(46, 46, 46)",
+      "--taskbar-bg-color": "rgb(50, 50, 65)",
+      "--hero-bg-color": "rgb(32, 32, 32)",
+
+      "--primary-text-color": "rgb(200, 200, 200)",
+      "--secondary-text-color": "rgb(160, 160, 160)"
+    },
+    "buttonIcon": "images\\moonicon.svg",
+    "buttonalt": "light mode switch (a moon)"
+  }
+};
+
+let translations = {}; // hold the parsed JSON translations
 let currentLang = DEFAULT_LANG;
+
+let currentLightmode = DEFAULT_LIGHTMODE;
 
 /**
  * setElementContentOrAttributes(el, value)
- * - If value is a string -> set el.innerHTML (inserts HTML content)
- * - If value is an object -> set attributes and/or inner HTML depending on keys
+ * - If value is a string -> set el.innerHTML
+ * - If value is a object -> set attributes
  */
 
 function setElementContentOrAttributes(el, value) {
@@ -77,6 +110,18 @@ function toggleLanguage() {
   applyTranslations(currentLang);
 }
 
+function toggleLight() {
+  currentLightmode = (currentLightmode === 'light') ? 'dark' : 'light';
+
+  Object.keys(LIGHTMODE_CONTENT[currentLightmode]["css"]).forEach((key) => {
+  const value = LIGHTMODE_CONTENT[currentLightmode]["css"][key];
+  document.documentElement.style.setProperty(key, value);
+  });
+
+  document.getElementById("lightIcon").src = LIGHTMODE_CONTENT[currentLightmode]["buttonIcon"]
+  document.getElementById("lightIcon").alt = LIGHTMODE_CONTENT[currentLightmode]["buttonalt"]
+}
+
 /**
  * init()
  * - loads the JSON, chooses an initial language, applies translations,
@@ -107,6 +152,13 @@ async function init() {
     toggleBtn.addEventListener('click', toggleLanguage);
   } else {
     console.warn('Language toggle button not found (id="langSwitcher").');
+  }
+
+  const lightBtn = document.getElementById('lightSwitcher');
+  if (lightBtn) {
+    lightBtn.addEventListener('click', toggleLight);
+  } else {
+    console.warn('Language toggle button not found (id="lightSwitcher").');
   }
 }
 
