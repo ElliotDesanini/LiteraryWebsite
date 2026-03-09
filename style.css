@@ -128,6 +128,10 @@ section {
     background-color: var(--bg-color);
 }
 
+section img {
+    max-height: 40vh;
+}
+
 section .container {
     display: grid;
     grid-template-areas: 
@@ -152,7 +156,6 @@ section .images {
     align-items: center;
     gap: 0.5rem;
 }
-
 
 #hero {
     background-color: var(--hero-bg-color);
@@ -198,14 +201,6 @@ section .images {
     padding-right: 15%;
 }
 
-.poemContainerSv #englishRaven p {
-    margin-bottom: 2.134rem;
-}
-
-.poemContainerSv #swedishRaven p {
-    margin-bottom: -0.2rem;
-}
-
 #ravenTitle {
     grid-area: ravenTitle;
     text-align: center;
@@ -216,12 +211,13 @@ section .images {
     text-align: center;
 }
 
-#englishRaven {
-    grid-area: englishRaven;
-}
-
 #swedishRaven {
     grid-area: swedishRaven;
+    height: fit-content;
+}
+
+#englishRaven {
+    grid-area: englishRaven;
 }
 
 .poemContainer #swedishRaven {
@@ -250,4 +246,42 @@ footer .contacts h1 {
 
 footer .workplace {
     grid-area: workplace;
+}
+
+@media (max-width: 1550px) {
+    .poemContainerSv p {
+        font-size: 1.005vw;
+    }
+}
+
+@media (max-width: 1260px) {
+    .poemContainerSv h1 {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    header a {
+        font-size: 1.25vw;
+    }
+
+    .poemContainerSv h1 {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 720px) {
+    footer p, footer h1 {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 600px) {
+    section img {
+        display: none;
+    }
+
+    section .container {
+        grid-template-columns: 8fr 1fr;
+    }
 }

@@ -4,6 +4,9 @@
         "langSwitch": {
             "title": "language switch"
         },
+        "lightSwitcher": {
+            "title": "light switch"
+        },
         "langFlag": {
             "src": "images\\engflagicon.svg",
             "alt": "language switch (current: eng)"
@@ -57,6 +60,9 @@
         "siteTitle": "Literatur Websida",
         "langSwitch": {
             "title": "stråk knapp"
+        },
+        "lightSwitcher": {
+            "title": "strömbrytare"
         },
         "langFlag": {
             "src": "images\\swedflagicon.svg",

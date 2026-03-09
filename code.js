@@ -126,6 +126,7 @@ function toggleLight() {
  * init()
  * - loads the JSON, chooses an initial language, applies translations,
  *   and wires the toggle button.
+ * - toggle lightmode
  */
 
 async function init() {
