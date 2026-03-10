@@ -274,9 +274,7 @@ footer .workplace {
     footer p, footer h1 {
         font-size: 2vw;
     }
-}
 
-@media (max-width: 600px) {
     section img {
         display: none;
     }
