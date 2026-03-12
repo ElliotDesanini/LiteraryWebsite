@@ -132,6 +132,10 @@ section img {
     max-height: 40vh;
 }
 
+section hr {
+    border: 1px solid var(--secondary-text-color);
+}
+
 section .container {
     display: grid;
     grid-template-areas: 
@@ -143,10 +147,12 @@ section .container {
 
 section .title {
     grid-area: title;
+    padding-left: 5%;
 }
 
 section .text {
     grid-area: text;
+    padding-left: 10%;
 }
 
 section .images {
